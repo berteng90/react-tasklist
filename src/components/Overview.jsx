@@ -1,10 +1,10 @@
 const Task = ({ tasks }) => {
   const taskList = tasks.map((task) => (
-    <div className="flex flex-col space-y-2 items-center " key={task.taskname}>
+    <div className="flex flex-col space-y-1 items-center" key={task.taskname}>
       <h1>{task.taskname}</h1>
-      <div className="flex flex-col">
+      <div className="flex flex-row ">
         <p className="p-50">{task.description}</p>
-        <button className="bg-slate-400 w-50 ">Done</button>
+        <button className="bg-slate-400 w-20 ">Done</button>
       </div>
     </div>
   ));
